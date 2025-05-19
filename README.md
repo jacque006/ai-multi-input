@@ -1,5 +1,5 @@
 # ai-multi-input
-Python script to handle &amp; prioiitize multiple concurrent inputs to an AI agent (voice, text, etc)
+Python script to handle &amp; prioritize multiple concurrent inputs to an AI agent (voice, text, etc)
 
 ## requires
 - [Python 3](https://www.python.org/)
@@ -12,4 +12,6 @@ From repo root:
 4. Install deps `python -m pip install -r requirements.txt`
 
 ## run
+Make sure your venv is active (`source ./venv/bin/activate`)
+
 `./main.py`

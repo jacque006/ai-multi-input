@@ -10,6 +10,4 @@ async def random_thought_task(queue):
         if queue.empty():
             # TODO Get random thought from a list or somewhere else
             msg = 'Did you get that thing I sent ya?'
-            priority = Priority.LOW
-            await queue.put((priority, msg))
-            log.debug(f"sending random thought '{msg}'")
+            await queue.put((Priority.LOW, msg))

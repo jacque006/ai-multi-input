@@ -17,13 +17,9 @@ async def voice_input_task(queue):
 
         # TODO Get voice input
         msg = 'Hear the power of my voice!'
-        priority = Priority.HIGH
 
         # https://stackoverflow.com/a/64659149
-        loop.call_soon_threadsafe(queue.put_nowait, (priority, msg))
-
-        log.debug(f"sending voice input '{msg}'")
-
+        loop.call_soon_threadsafe(queue.put_nowait, (Priority.HIGH, msg))
 
     keyboard.Listener(on_press=handle_press).start()
 

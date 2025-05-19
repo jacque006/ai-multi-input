@@ -2,7 +2,7 @@ import asyncio
 from logger import log
 
 async def youtube_chat_task(queue):
-    log.debug(f"starting youtube chat task")
+    log.debug("starting youtube chat task")
     while True:
         # TODO Read from Youtube chat
 

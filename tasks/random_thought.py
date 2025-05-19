@@ -3,7 +3,7 @@ from logger import log
 from priority import Priority
 
 async def random_thought_task(queue):
-    log.debug(f"starting random thought task")
+    log.debug("starting random thought task")
     while True:
         await asyncio.sleep(10)
 

@@ -2,7 +2,7 @@ import asyncio
 from logger import log
 
 async def ai_task(queue):
-    log.debug(f"starting ai task")
+    log.debug("starting ai task")
     while True:
         (priority, msg) = await queue.get()
 
